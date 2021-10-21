@@ -16,6 +16,9 @@ const generateTemplate = ({
   email,
 }) =>
   `# ${title}
+
+
+
 # Table Of Contents
 * [Description](#description)
 * [Installation](#installation)
@@ -38,6 +41,8 @@ ${tests}
 ${questions}
 # License
 ${license}
+
+${renderLicenseBadge(license)}
 
 # Contact
 * Github :${git}
@@ -82,7 +87,7 @@ inquirer
       type: "list",
       name: "license",
       message: "Enter your LinkedIn URL.",
-      choices: ["MIT", "GPL", "Apache", "N/A"],
+      choices: ["MIT", "GPLv3", "GPL", "N/A"],
     },
     {
       type: "input",
@@ -114,6 +119,21 @@ inquirer
         : console.log("Successfully created the README file!")
     );
   });
+
+function renderLicenseBadge(license) {
+  let licenseType = license.license;
+  let yourLicense = "";
+  if (licenseType === "MIT") {
+    yourLicense = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
+  } else if (licenseType === "GPLv3") {
+    yourLicense = `![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)`;
+  } else if (licenseType === "GPL") {
+    yourLicense = `![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)`;
+  } else {
+    license.license = "N/A";
+  }
+  return yourLicense;
+}
 
 // TODO: Create a function to initialize app
 function init() {}
