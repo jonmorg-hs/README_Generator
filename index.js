@@ -5,7 +5,7 @@ const fs = require("fs");
 function renderLicenseBadge(license) {
   let yourLicense = "";
   if (license === "MIT") {
-    yourLicense = `MIT ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
+    yourLicense = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
   } else if (license === "GPLv3") {
     yourLicense = `![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)`;
   } else if (license === "GPL") {
@@ -22,14 +22,13 @@ const generateTemplate = ({
   installation,
   use,
   tests,
-  questions,
   license,
   contribution,
   git,
-  linkedin,
   email,
 }) =>
   `# ${title}
+  ${renderLicenseBadge(license)}
 # Table Of Contents
 * [Description](#description)
 * [Installation](#installation)
@@ -49,15 +48,10 @@ ${contribution}
 # Tests
 ${tests}
 # Questions
-${questions}
-# License
-
-${renderLicenseBadge(license)}
-
-# Contact
 * Github :${git}
-* Linkedin :${linkedin}
 * E-Mail : ${email}
+# License
+${license}
 `;
 
 //inquirer to generate questions
@@ -89,11 +83,6 @@ inquirer
       message: "Input team members:",
     },
     {
-      type: "input",
-      name: "questions",
-      message: "Questions:",
-    },
-    {
       type: "list",
       name: "license",
       message: "Enter your LinkedIn URL.",
@@ -108,11 +97,6 @@ inquirer
       type: "input",
       name: "git",
       message: "GitHub username:",
-    },
-    {
-      type: "input",
-      name: "linkedin",
-      message: "Linkedin username:",
     },
     {
       type: "input",

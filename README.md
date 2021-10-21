@@ -1,4 +1,5 @@
-# README
+# README Gen
+  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 # Table Of Contents
 * [Description](#description)
 * [Installation](#installation)
@@ -18,12 +19,7 @@
 # Tests
 
 # Questions
-
+* Github :asadas
+* E-Mail : asdadasd
 # License
-
-MIT ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-
-# Contact
-* Github :
-* Linkedin :
-* E-Mail : 
+MIT
