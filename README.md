@@ -12,9 +12,7 @@
 # Description
 
 # Demo
-<video width="320" height="240" controls>
-  <source src="assets/README.mp4" type="video/mp4">
-</video>
+<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/LgWX2sPZQsE/" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
 # Installation
 
 # Usage
