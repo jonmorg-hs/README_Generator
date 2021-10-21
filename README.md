@@ -1,4 +1,4 @@
-# README Generator
+# README Gen
   ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 # Table Of Contents
 * [Description](#description)
@@ -19,7 +19,7 @@
 # Tests
 
 # Questions
-* Github : [a link](https://github.com/jonmorg-hs)
-* E-Mail : [contact me](mailto:jonmorg@iinet.net.au)
+* [Github: https://github.com/](https://github.com/)
+* [Email: jonmorg@iinet.net.au](mailto:jonmorg@iinet.net.au)
 # License
 MIT

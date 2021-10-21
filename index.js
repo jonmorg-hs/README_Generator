@@ -48,8 +48,8 @@ ${contribution}
 # Tests
 ${tests}
 # Questions
-* Github : [a link](https://github.com/${git})
-* E-Mail : [contact me](mailto:${email})
+* [Github: https://github.com/${git}](https://github.com/${git})
+* [Email: ${email}](mailto:${email})
 # License
 ${license}
 `;
