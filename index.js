@@ -7,20 +7,23 @@ const generateTemplate = ({
   description,
   installation,
   use,
-  credits,
+  tests,
+  questions,
   license,
-  contribute,
+  contribution,
   git,
   linkedin,
   email,
 }) =>
   `# ${title}
-* [Description][#description]
-* [Installation][#installation]
-* [Usage][#usage]
-* [Contribution][#contribution]
-* [Credits][#credits]
-* [License][#license]
+# Table Of Contents
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contribution](#contribution)
+* [Tests](#test)
+* [Questions](#questions)
+* [License](#license)
 # Description
 ${description}
 # Installation
@@ -28,9 +31,11 @@ ${installation}
 # Usage
 ${use}
 # Contribution
-${contribute}
-# Credits
-${credits}
+${contribution}
+# Tests
+${tests}
+# Questions
+${questions}
 # License
 ${license}
 
@@ -65,8 +70,13 @@ inquirer
     },
     {
       type: "input",
-      name: "credits",
+      name: "tests",
       message: "Input team members:",
+    },
+    {
+      type: "input",
+      name: "questions",
+      message: "Questions:",
     },
     {
       type: "list",
@@ -76,8 +86,8 @@ inquirer
     },
     {
       type: "input",
-      name: "contribute",
-      message: "How to contribute to the project?",
+      name: "contribution",
+      message: "Input contributing team members:",
     },
     {
       type: "input",
