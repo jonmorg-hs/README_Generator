@@ -12,7 +12,7 @@
 # Description
 
 # Demo
-<img src="assets/README.mp4" type="video/mp4"/>
+{% video assets/README.mp4 %}
 # Installation
 
 # Usage
