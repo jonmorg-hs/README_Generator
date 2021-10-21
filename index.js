@@ -2,6 +2,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
+//putting license badge into template
 function renderLicenseBadge(license) {
   let yourLicense = "";
   if (license === "MIT") {
@@ -10,6 +11,10 @@ function renderLicenseBadge(license) {
     yourLicense = `![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)`;
   } else if (license === "GPL") {
     yourLicense = `![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)`;
+  } else if (license === "Apache") {
+    yourLicense = `![Apache 2.0 license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)`;
+  } else if (license === "ISC") {
+    yourLicense = `![ISC license](https://img.shields.io/badge/License-ISC-blue.svg)`;
   } else {
     yourLicense = "N/A";
   }
@@ -89,7 +94,7 @@ inquirer
       type: "list",
       name: "license",
       message: "Enter your LinkedIn URL.",
-      choices: ["MIT", "GPLv3", "GPL", "N/A"],
+      choices: ["MIT", "GPLv3", "GPL", "Apache", "ISC", "N/A"],
     },
     {
       type: "input",
@@ -116,9 +121,3 @@ inquirer
         : console.log("Successfully created the README file!")
     );
   });
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
