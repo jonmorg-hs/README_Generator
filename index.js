@@ -3,16 +3,15 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 
 function renderLicenseBadge(license) {
-  let licenseType = license.license;
   let yourLicense = "";
-  if (licenseType === "MIT") {
-    yourLicense = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
-  } else if (licenseType === "GPLv3") {
+  if (license === "MIT") {
+    yourLicense = `MIT ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
+  } else if (license === "GPLv3") {
     yourLicense = `![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)`;
-  } else if (licenseType === "GPL") {
+  } else if (license === "GPL") {
     yourLicense = `![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)`;
   } else {
-    license.license = "N/A";
+    yourLicense = "N/A";
   }
   return yourLicense;
 }

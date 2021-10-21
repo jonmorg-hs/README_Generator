@@ -1,4 +1,4 @@
-# README Generator
+# README
 # Table Of Contents
 * [Description](#description)
 * [Installation](#installation)
@@ -21,7 +21,7 @@
 
 # License
 
-
+MIT ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 # Contact
 * Github :
