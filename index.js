@@ -2,6 +2,21 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
+function renderLicenseBadge(license) {
+  let licenseType = license.license;
+  let yourLicense = "";
+  if (licenseType === "MIT") {
+    yourLicense = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
+  } else if (licenseType === "GPLv3") {
+    yourLicense = `![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)`;
+  } else if (licenseType === "GPL") {
+    yourLicense = `![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)`;
+  } else {
+    license.license = "N/A";
+  }
+  return yourLicense;
+}
+
 const generateTemplate = ({
   title,
   description,
@@ -16,9 +31,6 @@ const generateTemplate = ({
   email,
 }) =>
   `# ${title}
-
-
-
 # Table Of Contents
 * [Description](#description)
 * [Installation](#installation)
@@ -118,21 +130,6 @@ inquirer
         : console.log("Successfully created the README file!")
     );
   });
-
-function renderLicenseBadge(license) {
-  let licenseType = license.license;
-  let yourLicense = "";
-  if (licenseType === "MIT") {
-    yourLicense = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
-  } else if (licenseType === "GPLv3") {
-    yourLicense = `![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)`;
-  } else if (licenseType === "GPL") {
-    yourLicense = `![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)`;
-  } else {
-    license.license = "N/A";
-  }
-  return yourLicense;
-}
 
 // TODO: Create a function to initialize app
 function init() {}

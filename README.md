@@ -1,7 +1,4 @@
-# README Gen
-
-
-
+# README Generator
 # Table Of Contents
 * [Description](#description)
 * [Installation](#installation)
