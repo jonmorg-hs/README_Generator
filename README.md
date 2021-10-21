@@ -1,4 +1,4 @@
-# 
+# README Generator
 # Table Of Contents
 * [Description](#description)
 * [Installation](#installation)
@@ -22,7 +22,7 @@
 # License
 MIT
 
-#Contact
+# Contact
 * Github :
 * Linkedin :
 * E-Mail : 
