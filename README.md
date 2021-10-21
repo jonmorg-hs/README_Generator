@@ -12,7 +12,7 @@
 # Description
 
 # Demo
-{% video assets/README.mp4 %}
+[![img_tag](assets/README.png)](assets/README.mp4)
 # Installation
 
 # Usage
