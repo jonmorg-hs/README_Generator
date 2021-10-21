@@ -41,7 +41,7 @@ const generateTemplate = ({
 # Description
 ${description}
 # Demo
-[![img_tag](assets/README.png)](assets/README.mp4)
+[![demo](https://i9.ytimg.com/vi/AP_8U12uir0/mq3.jpg?sqp=CJjQw4sG&rs=AOn4CLA3gblT5LAupWZdXmO56d_UEATkVg)](https://youtu.be/AP_8U12uir0)
 # Installation
 ${installation}
 # Usage
