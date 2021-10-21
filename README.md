@@ -12,7 +12,7 @@
 # Description
 
 # Demo
-# <iframe id="video" width="560" height="315" src="assets/README.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+<img src="assets/README.mp4" type="video/mp4"/>
 # Installation
 
 # Usage
