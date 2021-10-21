@@ -31,6 +31,7 @@ const generateTemplate = ({
   ${renderLicenseBadge(license)}
 # Table Of Contents
 * [Description](#description)
+* [Demo](*demo)
 * [Installation](#installation)
 * [Usage](#usage)
 * [Contribution](#contribution)
@@ -39,6 +40,8 @@ const generateTemplate = ({
 * [License](#license)
 # Description
 ${description}
+# Demo
+<video src='assets/README Generator.mp4' width=180/>
 # Installation
 ${installation}
 # Usage

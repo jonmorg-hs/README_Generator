@@ -2,6 +2,7 @@
   ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 # Table Of Contents
 * [Description](#description)
+* [Demo](*demo)
 * [Installation](#installation)
 * [Usage](#usage)
 * [Contribution](#contribution)
@@ -9,15 +10,17 @@
 * [Questions](#questions)
 * [License](#license)
 # Description
-An automated README file generator using node.js
+An automated README file generator using nodejs
+# Demo
+<video src='assets/README Generator.mp4' width=180/>
 # Installation
-Install index.js and dependencies (npm inquirer)
+Install index.js and node dependencies (npm inquirer)
 # Usage
-once installed, run node index.js
+Once installed, run node index.js in CLI
 # Contribution
-No
+None
 # Tests
-No other team members
+Just Me
 # Questions
 * [Github: https://github.com/jonmorg-hs](https://github.com/jonmorg-hs)
 * [Email: jonmorg@iinet.net.au](mailto:jonmorg@iinet.net.au)
