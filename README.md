@@ -12,7 +12,7 @@
 # Description
 
 # Demo
-[<video src='assets/README Generator.mp4' width=180/>]
+![Watch the video](assets/README.mp4)
 # Installation
 
 # Usage
