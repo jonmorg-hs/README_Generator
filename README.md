@@ -1,4 +1,4 @@
-# README Generator
+# README Gen
 
 
 
@@ -23,7 +23,6 @@
 # Questions
 
 # License
-MIT
 
 
 

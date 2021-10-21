@@ -40,7 +40,6 @@ ${tests}
 # Questions
 ${questions}
 # License
-${license}
 
 ${renderLicenseBadge(license)}
 
