@@ -41,7 +41,7 @@ const generateTemplate = ({
 # Description
 ${description}
 # Demo
-<video src='assets/README Generator.mp4' width=180/>
+[<video src='assets/README Generator.mp4' width=180/>]
 # Installation
 ${installation}
 # Usage
